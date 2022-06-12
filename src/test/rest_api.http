@@ -1,0 +1,21 @@
+# curl http://localhost:8080/json/mkyong
+GET http://localhost:8080/json/mkyong
+
+<> 2022-06-12T171526.200.json
+
+###
+
+# curl http://localhost:8080/json/all
+GET http://localhost:8080/json/all
+
+###
+
+# curl -H "Content-Type: application/json"
+#    -X POST -d "{\"id\" : 1,\"name\" : \"mkyong\"}" http://localhost:8080/json/create
+POST http://localhost:8080/json/create
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "mkyong"
+}
